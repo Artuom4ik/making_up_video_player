@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <style type="text/css">
     .js-video-container {
-      box-shadow: 0pc 0.5pc 0.5pc 0.5pc rgba(0, 0, 0, 0.403);
+      flex-grow: 1;
     }
     .button {
       background-color: black;
@@ -16,11 +16,16 @@
       border-style:none;
       cursor: pointer;
       color: white;}
+    .video-player {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 45px rgba(0, 0, 0, 0.8);
+    }
   </style>
 </head>
 <body>
-  <div id="player" style="width: 800px; height: 600px;">
-    <div class="js-video-container" style="width: 100%; height: 100%;"></div>
+  <div class="video-player" id="player" style="width: 800px; height: 600px;">
+    <div class="js-video-container"></div>
     <div class="button">
       <button class="js-play-button">
         <i class="fa fa-play" aria-hidden="true"></i>
@@ -28,6 +33,7 @@
       <button class="js-pause-button">
         <i class="fa fa-pause" aria-hidden="true"></i>
       </button>
+    </div>
   </div>
     <!-- Here can be placed player controls: play and volume buttons -->
   </div>
