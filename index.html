@@ -5,22 +5,15 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <style type="text/css">
-    .js-video-container {
-      flex-grow: 1;
+    
+    .video-player {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 45px rgba(0, 0, 0, 0.8);
     }
-
-    .button {
-      background-color: black;
-    }
-
-    .js-volume-button {
-      margin: 10px;
-    }
-    .js-mute-button {
-      margin: 10px;
-    }
-
+    
     button {
+      margin: 10px;
       height: 15px;
       width: 15px;
       font-size: 120%;
@@ -30,11 +23,20 @@
       cursor: pointer;
       color: white;}
 
-    .video-player {
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 0 45px rgba(0, 0, 0, 0.8);
+    .js-video-container {
+      flex-grow: 1;
     }
+
+    .button {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+    }
+    
+    .blank {
+      flex-grow: 1;
+    }
+    
   </style>
 </head>
 <body>
@@ -56,6 +58,12 @@
 
       <button class="js-mute-button">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
+      </button>
+
+      <div class="blank"> </div>
+
+      <button class="js-fullscreen-button">
+        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
       </button>
 
     </div>
