@@ -14,12 +14,12 @@
     
     button {
       margin-bottom: 19px;
-      margin-left: 3px;
-      margin-right: 14px;
-      height: 13px;
-      width: 13px;
-      font-size: 110%;
-      line-height: 140%;
+      margin-left: 1px;
+      margin-right: 10px;
+      height: 8px;
+      width: 8px;
+      font-size: 90%;
+      line-height: 130%;
       background-color:rgba(117, 190, 218, 0);
       border-style:none;
       cursor: pointer;
@@ -30,15 +30,15 @@
     }
 
     .js-fullscreen-button {
-      margin-right: 17px;
+      margin-right: 14px;
     }
 
     .js-volume-button {
-      margin-left: 5px;
+      margin-left: 4px;
     }
 
     .js-mute-button {
-      margin-left: 5px;
+      margin-left: 4px;
     }
 
     .button {
@@ -50,11 +50,32 @@
     .blank {
       flex-grow: 1;
     }
+
+    .time {
+<<<<<<< HEAD
+      display: flex;
+      flex-grow: 1;
+      font-size: 81%;
+      line-height: 160%;
+      font-family: 'Roboto 400';
+      background-color: black;
+=======
+>>>>>>> 424483ed343971fcee8e4b49a226a39c7f619235
+      color: white;
+    }
     
+    .js-current-time {
+      margin-left: 5px;
+    }
+
+    .js-duration {
+      margin-left: 1px;
+    }
+
   </style>
 </head>
 <body>
-  <div class="video-player" id="player" style="width: 711px; height: 532px;">
+  <div class="video-player" id="player" style="width: 582px; height: 437px;">
     <div class="js-video-container"></div>
     <div class="button">
 
@@ -72,14 +93,27 @@
 
       <button class="js-mute-button">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
+<<<<<<< HEAD
       </button>
 
+      <div class="time">
+        <span class="js-current-time"></span>
+        <div class="blank"> </div>
+        <span class="js-duration"></span>
+      </div>
+=======
+      </button>      
+      <div class="time">
+        <span class="js-current-time"></span>
+        —
+        <span class="js-duration"></span>
+      </div>
       <div class="blank"> </div>
+>>>>>>> 424483ed343971fcee8e4b49a226a39c7f619235
 
       <button class="js-fullscreen-button">
         <i class="fa fa-arrows-alt" aria-hidden="true"></i>
       </button>
-
     </div>
   </div>
     <!-- Here can be placed player controls: play and volume buttons -->
