@@ -51,15 +51,21 @@
     
     .js-progress {
       flex-grow: 1;
+      justify-content: center;
       background-color: grey;
+      border-radius: 2px;
       font-size: 79%;
-      height: 11px;
-      margin-top: 4px;
+      height: 4px;
+      margin-top: 8px;
+      margin-left: 4px;
+      margin-right: 8px;
     }
 
     .js-progress-slider {
+      justify-content: center; 
       background-color: #f8104d;
-      height: 11px;
+      border-radius: 2px;
+      height: 4px;
       font-size: 10px;
     }
 
@@ -71,6 +77,20 @@
       background-color: black;
       color: white;
     }
+
+  .js-current-time {
+    margin-left: 4px;
+  }
+
+  .dot {
+    height: 6px;
+    width: 6px;
+    background-color: #f8104d;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+  }
   </style>
 </head>
 <body>
@@ -106,6 +126,8 @@
       <button class="js-fullscreen-button">
         <i class="fa fa-arrows-alt" aria-hidden="true"></i>
       </button>
+
+      <span class="dot"></span>
 
     </div>
   </div>
