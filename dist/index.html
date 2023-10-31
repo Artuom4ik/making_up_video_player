@@ -6,7 +6,8 @@
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <style type="text/css">
-    
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
     .video-player {
       display: flex;
       flex-direction: column;
@@ -14,12 +15,12 @@
     }
     
     button {
-      margin-bottom: 19px;
+      margin-bottom: 17px;
       margin-left: 1px;
       margin-right: 10px;
       height: 8px;
       width: 8px;
-      font-size: 90%;
+      font-size: 89%;
       line-height: 130%;
       background-color:rgba(117, 190, 218, 0);
       border-style:none;
@@ -31,15 +32,7 @@
     }
 
     .js-fullscreen-button {
-      margin-right: 14px;
-    }
-
-    .js-volume-button {
-      margin-left: 4px;
-    }
-
-    .js-mute-button {
-      margin-left: 4px;
+      margin-right: 13px;
     }
 
     .bottom-panel {
@@ -57,23 +50,19 @@
       flex-grow: 1;
       font-size: 81%;
       line-height: 160%;
-      font-family: 'Roboto 400';
+      font-family: 'Roboto', sans-serif;
       background-color: black;
       color: white;
     }
     
     .js-current-time {
-      margin-left: 5px;
-    }
-
-    .js-duration {
-      margin-left: 1px;
+      margin-left: 3px;
     }
 
   </style>
 </head>
 <body>
-  <div class="video-player" id="player" style="width: 582px; height: 437px;">
+  <div class="video-player" id="player" style="width: 576px; height: 432px;">
     <div class="js-video-container"></div>
     <div class="bottom-panel">
       <div class="left-buttons">
@@ -86,11 +75,11 @@
         </button>
 
         <button class="js-mute-button">
-          <i class="fa fa-volume-off" aria-hidden="true"></i>
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
 
         <button class="js-volume-button">
-          <i class="fa fa-volume-up" aria-hidden="true"></i>
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
         
       </div>
