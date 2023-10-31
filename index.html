@@ -3,6 +3,7 @@
 <head>
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <style type="text/css">
     
@@ -41,7 +42,7 @@
       margin-left: 4px;
     }
 
-    .button {
+    .bottom-panel {
       display: flex;
       flex-direction: row;
       background-color: black;
@@ -51,7 +52,7 @@
       flex-grow: 1;
     }
 
-    .time {
+    .viewing-panel {
       display: flex;
       flex-grow: 1;
       font-size: 81%;
@@ -74,34 +75,37 @@
 <body>
   <div class="video-player" id="player" style="width: 582px; height: 437px;">
     <div class="js-video-container"></div>
-    <div class="button">
+    <div class="bottom-panel">
+      <div class="left-buttons">
+        <button class="js-play-button">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
 
-      <button class="js-play-button">
-        <i class="fa fa-play" aria-hidden="true"></i>
-      </button>
+        <button class="js-pause-button">
+          <i class="fa fa-pause" aria-hidden="true"></i>
+        </button>
 
-      <button class="js-pause-button">
-        <i class="fa fa-pause" aria-hidden="true"></i>
-      </button>
+        <button class="js-volume-button">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
 
-      <button class="js-volume-button">
-        <i class="fa fa-volume-up" aria-hidden="true"></i>
-      </button>
+        <button class="js-mute-button">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
+        </button>
+      </div>
 
-      <button class="js-mute-button">
-        <i class="fa fa-volume-off" aria-hidden="true"></i>
-
-      </button>
-
-      <div class="time">
+      <div class="viewing-panel">
         <span class="js-current-time"></span>
         <div class="blank"> </div>
         <span class="js-duration"></span>
+      </div>     
+    
+      <div class="right-buttons">
+        <button class="js-fullscreen-button">
+          <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+        </button>
       </div>
 
-      <button class="js-fullscreen-button">
-        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-      </button>
     </div>
   </div>
     <!-- Here can be placed player controls: play and volume buttons -->
