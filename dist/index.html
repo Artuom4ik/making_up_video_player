@@ -46,6 +46,7 @@
     .bottom-panel {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       background-color: black;
     }
     
@@ -58,7 +59,7 @@
       font-size: 79%;
       height: 4px;
       margin-top: 8px;
-      margin-left: 4px;
+      margin-left: 3px;
       margin-right: 8px;
     }
 
@@ -80,10 +81,21 @@
     }
 
   .js-current-time {
+    font-size: 12px;
     margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 1px;
+  }
+
+  .js-duration {
+    font-size: 12px;
+    margin-top: 1px;
   }
 
   .dot {
+    display: flex;
+    align-self: center;
+    margin-left: -3px;
     height: 6px;
     width: 6px;
     background-color: #f8104d;
