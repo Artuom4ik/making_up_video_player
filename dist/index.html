@@ -31,6 +31,14 @@
       flex-grow: 1;
     }
 
+    .js-valume-button {
+      margin-left: 4px;
+    }
+
+    .js-mute-button {
+      margin-left: 4px;
+    }
+
     .js-fullscreen-button {
       margin-right: 13px;
     }
@@ -41,60 +49,63 @@
       background-color: black;
     }
     
-    .blank {
+    .js-progress {
       flex-grow: 1;
+      background-color: grey;
+      font-size: 79%;
+      height: 11px;
+      margin-top: 4px;
     }
 
-    .viewing-panel {
+    .js-progress-slider {
+      background-color: #f8104d;
+      height: 11px;
+      font-size: 10px;
+    }
+
+    span {
       display: flex;
-      flex-grow: 1;
-      font-size: 81%;
+      font-size: 79%;
       line-height: 160%;
       font-family: 'Roboto', sans-serif;
       background-color: black;
       color: white;
     }
-    
-    .js-current-time {
-      margin-left: 3px;
-    }
-
   </style>
 </head>
 <body>
   <div class="video-player" id="player" style="width: 576px; height: 432px;">
     <div class="js-video-container"></div>
     <div class="bottom-panel">
-      <div class="left-buttons">
-        <button class="js-play-button">
-          <i class="fa fa-play" aria-hidden="true"></i>
-        </button>
+      <button class="js-play-button">
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </button>
 
-        <button class="js-pause-button">
-          <i class="fa fa-pause" aria-hidden="true"></i>
-        </button>
+      <button class="js-pause-button">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+      </button>
 
-        <button class="js-mute-button">
-          <i class="fa fa-volume-up" aria-hidden="true"></i>
-        </button>
+      <button class="js-mute-button">
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
+      </button>
 
-        <button class="js-volume-button">
-          <i class="fa fa-volume-off" aria-hidden="true"></i>
-        </button>
-        
+      <button class="js-volume-button">
+        <i class="fa fa-volume-off" aria-hidden="true"></i>
+      </button>
+
+      <span class="js-current-time"></span>
+
+      <div class="js-progress">
+        <div class="js-progress-slider">Прогресс</div>
       </div>
 
-      <div class="viewing-panel">
-        <span class="js-current-time"></span>
-        <div class="blank"> </div>
-        <span class="js-duration"></span>
-      </div>     
+      <span class="js-duration"></span>   
+      
+      
     
-      <div class="right-buttons">
-        <button class="js-fullscreen-button">
-          <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-        </button>
-      </div>
+      <button class="js-fullscreen-button">
+        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+      </button>
 
     </div>
   </div>
