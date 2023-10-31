@@ -6,5 +6,5 @@ def rebuild():
 
 
 server = Server()
-server.watch('index.html', rebuild)
+server.watch('dist/index.html', rebuild)
 server.serve(root='.')
