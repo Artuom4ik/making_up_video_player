@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "reset.css";
+
+.video-player {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.8);
+}
+
+.video-player-button {
+    margin-bottom: 17px;
+    margin-left: 1px;
+    margin-right: 10px;
+    height: 8px;
+    width: 8px;
+    font-size: 89%;
+    line-height: 130%;
+    background-color:rgba(0, 0, 0, 1);
+    border-style:none;
+    cursor: pointer;
+    color: white;
+}
+
+.video-player-button:focus {
+    outline: 0;
+    margin-bottom: 17px;
+    margin-left: 1px;
+    margin-right: 10px;
+    height: 8px;
+    width: 8px;
+    font-size: 89%;
+    line-height: 130%;
+    background-color:rgba(0, 0, 0, 1);
+    border-style:none;
+    cursor: pointer;
+    color: white;}
+
+.js-video-container {
+    flex-grow: 1;
+}
+
+.js-volume-button {
+    margin-left: 4px;
+}
+
+.js-mute-button {
+    margin-left: 4px;
+}
+
+.js-volume-button:focus {
+    margin-left: 4px;
+}
+
+.js-mute-button:focus {
+    margin-left: 4px;
+}
+
+.js-fullscreen-button {
+    margin-right: 13px;
+}
+
+.js-fullscreen-button:focus {
+    margin-right: 13px;
+}
+
+.bottom-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.js-progress {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color:rgba(117, 190, 218, 0);
+    border-radius: 2px;
+    font-size: 79%;
+    height: 4px;
+    margin-top: 8px;
+    margin-left: 3px;
+    margin-right: 8px;
+}
+
+.js-progress-slider {
+    justify-content: center; 
+    background-color: #f8104d;
+    border-radius: 2px;
+    height: 4px;
+    font-size: 10px;
+}
+
+.video-player-time {
+    display: flex;
+    font-size: 79%;
+    line-height: 160%;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.js-current-time {
+    font-size: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 1px;
+}
+
+.js-duration {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.dot {
+    opacity: 0;
+    display: flex;
+    align-self: center;
+    margin-left: -3px;
+    height: 6px;
+    width: 6px;
+    background-color: #f8104d;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.js-progress:hover .dot {
+    opacity: 1;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
